@@ -1,7 +1,6 @@
 use std::io;
 
-use criterion_table::build_tables;
-use criterion_table::formatter::GFMFormatter;
+use criterion_table::{build_tables, formatter::GFMFormatter};
 
 const TABLES_CONFIG: &str = "tables.toml";
 

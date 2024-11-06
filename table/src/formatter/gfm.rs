@@ -1,6 +1,7 @@
-use crate::{ColumnInfo, Comparison, Formatter, TimeUnit};
 use flexstr::{flex_fmt, FlexStr, IntoFlex, ToCase, ToFlexStr};
 use indexmap::IndexMap;
+
+use crate::{ColumnInfo, Comparison, Formatter, TimeUnit};
 
 const CT_URL: &str = "https://github.com/nu11ptr/criterion-table";
 
