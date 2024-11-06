@@ -14,17 +14,18 @@
 /// This module holds the various formatters that can be used to format the output
 pub mod formatter;
 
-use std::cmp::{max, Ordering};
-use std::collections::HashMap;
-use std::fs::File;
-use std::io::{BufReader, ErrorKind, Read};
-use std::ops::Div;
-use std::path::Path;
+use std::{
+    cmp::{max, Ordering},
+    collections::HashMap,
+    fs::File,
+    io::{BufReader, ErrorKind, Read},
+    ops::Div,
+    path::Path,
+};
 
 use anyhow::anyhow;
 use flexstr::{flex_fmt, FlexStr, IntoFlex, ToCase, ToFlex, ToFlexStr};
-use indexmap::map::Entry;
-use indexmap::IndexMap;
+use indexmap::{map::Entry, IndexMap};
 use serde::Deserialize;
 
 // Trick to test README samples (from: https://github.com/rust-lang/cargo/issues/383#issuecomment-720873790)
